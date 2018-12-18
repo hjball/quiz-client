@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Question from '../components/Question';
+import Question from '../containers/QuestionContainer';
 import Answers from '../components/Answers';
 
 const Quiz = () => (

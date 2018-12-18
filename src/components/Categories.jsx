@@ -19,9 +19,10 @@ class Categories extends Component {
 			<div className="container d-flex flex-wrap justify-content-around	">
 			{ categories.map((item, index) => (
 				<Category 
-					name={ item.category_name} 
+					name={ item.category } 
 					key={ index }
-					handleClick={ () => this.props.handleClick(item.category_id)}
+					link={ `/quiz/${ item.id }` }
+					// handleClick={ () => this.props.handleClick(item.id)}
 				/>
 			))}
 			</div>
