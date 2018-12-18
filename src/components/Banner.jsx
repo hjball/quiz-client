@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Banner = () => (
-	<div className="fluid-jumbotron" style={{height: 550, backgroundColor: "lightgrey"}}>
+	<div className="fluid-jumbotron" style={{height: 500, backgroundColor: "lightgrey"}}>
 	</div>
 );
 

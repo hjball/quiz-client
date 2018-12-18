@@ -1,8 +1,12 @@
 import React from 'react';
 
-const Category = () => (
-	<div className="d-inline-flex card justify-content-center align-items-center" style={{ width: 300, height: 300, marginTop: 25 , marginBottom: 25, backgroundColor: "rgb(212 ,124 ,122)"}}>
-		<p>Placeholder Category</p>
+const Category = ({ name, handleClick }) => (
+	<div 
+		className="d-inline-flex card justify-content-center align-items-center" 
+		style={{ width: '30%', height: 300, marginTop: 20, marginBottom: 20, backgroundColor: "rgb(212 ,124 ,122)"}}
+		onClick={ handleClick }
+		>
+		<p>{ name }</p>
 	</div>
 );
 
