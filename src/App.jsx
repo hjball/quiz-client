@@ -23,10 +23,8 @@ const App = () => (
             <Header />
             <Switch>
                 <Route exact path="/" component={ Home }/>
-                <Route exact path="/quiz/:id" render={({ match }) => (
-                    <Quiz quiz={ match.params.id } />
-                )} />
-                <Route path="/quiz/1/result" component={ Result }/>
+                <Route exact path="/quiz" component={ Quiz }/>
+                <Route path="/quiz/result" component={ Result }/>
                 <Route path="/submitQ" component={ SubmitQuestion } />
                 <Route component={ FourOhFour }/>
             </Switch>

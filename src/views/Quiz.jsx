@@ -10,28 +10,23 @@ class Quiz extends Component {
 		super(props);
 			this.state = {
 				index: 0,
-				time: 10,
-				start: 10,
 				result: 0,
 				outOf: 0,
-				date: Date.now() + 5000
+				date: Date.now() + 15000,
 			}
 
 			this.handleClick = this.handleClick.bind(this);
 			this.timesUp = this.timesUp.bind(this);
 	}
 
-	// componentDidMount() {
-	// 	setTimeout(() => this.setState({time: })), 15000);
-	// }
-
 	handleClick() {
 		if ((this.state.index + 1) === this.props.questions.length) {
-			history.push("/quiz/1/result")
+			history.push("/quiz/result")
 
 		} else {
 			this.setState({
 				index: (this.state.index + 1),
+				date: Date.now() + 15000
 			})
 		}		
 	}
@@ -43,7 +38,7 @@ class Quiz extends Component {
 		} else {
 			this.setState({
 				index: (this.state.index + 1),
-				date: Date.now() + 5000
+				date: Date.now() + 15000
 			})
 		}		
 	}
