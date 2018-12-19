@@ -13,6 +13,7 @@ import FourOhFour from './components/FourOhFour';
 import Home from './views/Home';
 import Quiz from './views/Quiz';
 import Result from './views/Result';
+import SubmitQuestion from './views/SubmitQuestion'
 
 const App = () => (
     <Router>
@@ -22,6 +23,7 @@ const App = () => (
                 <Route exact path="/" component={ Home }/>
                 <Route exact path="/quiz" component={ Quiz }/>
                 <Route path="/quiz/1/result" component={ Result }/>
+                <Route path="/submitQ" component={ SubmitQuestion } />
                 <Route component={ FourOhFour }/>
             </Switch>
             <Footer />
