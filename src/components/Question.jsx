@@ -4,14 +4,12 @@ class Question extends Component {
 	constructor(props) {
 		super(props);
 	}
-
 	render() {
 		const { quiz } = this.props;
-		console.log('QuestionContainer:', this.props)
 		return (
 			<div className="container" style={{height: 400, backgroundColor: "grey", color: "white"}}>
-			<h2>{ quiz }</h2>
-			<p>Which historical individual has the most descendents alive today?</p>
+				<h2>{ quiz.category }</h2>
+				<p>{ quiz.questions[this.props.index].question }</p>
 			</div>
 		)
 	}
