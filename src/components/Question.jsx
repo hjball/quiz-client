@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Question = () => (
-	<div className="container" style={{height: 400, backgroundColor: "grey", color: "white"}}>
-	<p>Which historical individual has the most descendents alive today?</p>
-	</div>
-);
+class Question extends Component {
+	constructor(props) {
+		super(props);
+	}
+	render() {
+		const { quiz } = this.props;
+		return (
+			<div className="container" style={{height: 400, backgroundColor: "grey", color: "white"}}>
+				<h2>{ quiz.category }</h2>
+				<p>{ quiz.questions[this.props.index].question }</p>
+			</div>
+		)
+	}
+};
 
 export default Question;

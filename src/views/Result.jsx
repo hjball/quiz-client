@@ -4,11 +4,11 @@ import Result from '../components/Result';
 
 
 const Quiz = () => (
-        <React.Fragment>
-        	<div style={{marginTop: 50, marginBottom: 50}}>
-	            <Result />
-	        </div>
-        </React.Fragment>
+    <React.Fragment>
+    	<div style={{marginTop: 50, marginBottom: 50}}>
+            <Result />
+        </div>
+    </React.Fragment>
    
 );
 
