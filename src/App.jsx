@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {
-    BrowserRouter as Router,
+    Router,
     Route,
     Switch,
 } from 'react-router-dom';
@@ -11,12 +11,14 @@ import Footer from './components/Footer';
 import FourOhFour from './components/FourOhFour';
 
 import Home from './views/Home';
-import Quiz from './views/Quiz';
-import Result from './views/Result';
-import SubmitQuestion from './views/SubmitQuestion'
+import Quiz from './containers/QuizContainer';
+import Result from './containers/ResultsContainer';
+import SubmitQuestion from './views/SubmitQuestion';
+
+import history from './history';
 
 const App = () => (
-    <Router>
+    <Router history={ history }>
         <React.Fragment>
             <Header />
             <Switch>
