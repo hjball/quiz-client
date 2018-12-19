@@ -28,4 +28,8 @@ export default {
 				}
 			]	
 		},
+	result: {
+				result: 2,
+				outOf: 3,
+			}
 };

@@ -3,20 +3,29 @@ import React, { Component } from 'react';
 import Question from '../containers/QuestionContainer';
 import Answers from '../containers/AnswersContainer';
 
+import history from '../history';
+
 class Quiz extends Component {
 	constructor(props) {
 		super(props);
 			this.state = {
 				index: 0,
+				result: 0,
+				outOf: 0,
 			}
 
 			this.handleClick = this.handleClick.bind(this);
 	}
 
 	handleClick() {
-		this.setState({
-			index: (this.state.index + 1),
-		})
+		if ((this.state.index + 1) === this.props.questions.length) {
+			history.push("/quiz/1/result")
+
+		} else {
+			this.setState({
+				index: (this.state.index + 1),
+			})
+		}		
 	}
 
 	render() {
