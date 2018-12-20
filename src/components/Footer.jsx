@@ -1,9 +1,13 @@
 import React from 'react';
 
 const Footer = () => (
-	<footer className="footer-layout">
-		<p>&copy; inQuizzit</p>
-	</footer>
+	<React.Fragment>
+		<hr className="footer" />
+		<footer className="footer-layout">
+			
+			<p>&copy; Quizzit</p>
+		</footer>
+	</React.Fragment>
 );
 
 export default Footer;
