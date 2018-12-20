@@ -2,7 +2,7 @@ import React from 'react';
 import Answer from './Answer';
 
 const Answers = ({ quiz, index, handleClick }) => (
-	<div className="container d-flex flex-wrap align-items-center justify-content-center" style={{height: 150, backgroundColor: "lightgrey"}}>
+	<div className="answer-container">
 		<Answer 
 			letter="A"
 			handleClick={ handleClick }

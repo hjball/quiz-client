@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Countdown from 'react-countdown-now';
 
 const renderer = ({ seconds }) => {
-	return <span>{ seconds }</span>
+	return <span className='timer'>{ seconds }</span>
 }
 
 class Timer extends Component  {
@@ -24,7 +24,7 @@ class Timer extends Component  {
 	render() {
 		const {date, timesUp} = this.props;
 		return this.state.showCountdown ? (
-			<Countdown 
+			<Countdown
 				date={ date }
 				renderer={ renderer }
 				onComplete={ this.timesUp }>
