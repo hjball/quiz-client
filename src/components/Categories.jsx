@@ -1,13 +1,21 @@
 import React, { Component } from 'react';
 import Category from './Category';
 
+import history from '../history';
+
 class Categories extends Component {
 	constructor(props) {
 		super(props);
+
+		this.handleClick = this.handleClick.bind(this);
 	}
 
 	componentDidMount() {
 		this.props.onLoad();
+	}
+
+	handleClick() {
+		history.push("/quiz");
 	}
 
 	render () {
@@ -16,16 +24,18 @@ class Categories extends Component {
 
 		return (
 			<React.Fragment>
-			<div className="container d-flex flex-wrap justify-content-around">
-			{ categories.map((item, index) => (
-				<Category 
-					name={ item.category } 
-					key={ index }
-					link={ `/quiz/${ item.id }` }
-					// handleClick={ () => this.props.handleClick(item.id)}
-				/>
-			))}
-			</div>
+				<div className="categories-title">
+					<h2>Categories</h2>
+				</div>
+				<div className="categories-container">
+				{ categories.map((item, index) => (
+					<Category 
+						name={ item.category } 
+						key={ index }
+						handleClick={ this.handleClick }
+					/>
+				))}
+				</div>
 			</React.Fragment>
 		)
 	}

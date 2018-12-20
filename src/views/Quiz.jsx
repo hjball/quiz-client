@@ -33,7 +33,7 @@ class Quiz extends Component {
 
 	timesUp() {
 		if ((this.state.index + 1) === this.props.questions.length) {
-			history.push("/quiz/1/result")
+			history.push("/quiz/result")
 
 		} else {
 			this.setState({

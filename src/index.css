@@ -4,21 +4,12 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(254, 250, 250);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-.footer-layout {
-    display: flex;
-    justify-content: center;
-}
-
-.footer {
-  border: 0.5px solid lightgrey;
-  margin: 2rem 1rem 0 1rem;
 }
 
 .header h1 {
@@ -41,6 +32,42 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: orange;
+  background-color: #D56C5B;
   height: 30rem;
+  color: rgb(254, 250, 250);
+}
+
+.categories-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 5%;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 20rem;
+  margin: 1rem;
+  background-color: #70A68A;
+  color: rgb(254, 250, 250);
+}
+
+.footer-layout {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.footer {
+  border: 0.5px solid lightgrey;
+  margin: 2rem 1rem 0 1rem;
 }
