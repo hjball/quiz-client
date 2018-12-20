@@ -46,7 +46,7 @@ class Quiz extends Component {
 	render() {
 		return (
 			<React.Fragment>
-	        	<div style={{marginTop: 50, marginBottom: 50}}>
+	        	<div>
 		            <Question date={this.state.date} timesUp={ this.timesUp } index={ this.state.index } />
 		            <Answers handleClick={ this.handleClick } index={ this.state.index }/> 
 		        </div>
