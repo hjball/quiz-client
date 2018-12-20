@@ -5,19 +5,19 @@ const Answers = ({ quiz, index, handleClick }) => (
 	<div className="answer-container">
 		<Answer 
 			letter="A"
-			handleClick={ handleClick }
+			handleClick={ () => handleClick('answer_A') }
 			answer={ quiz.questions[index].answer_A }/>
 		<Answer 
 			letter="B"
-			handleClick={ handleClick }
+			handleClick={ () => handleClick('answer_B') }
 			answer={ quiz.questions[index].answer_B }/>
 		<Answer 
 			letter="C"
-			handleClick={ handleClick }
+			handleClick={ () => handleClick('answer_C') }
 			answer={ quiz.questions[index].answer_C }/>
 		<Answer 
 			letter="D"
-			handleClick={ handleClick }
+			handleClick={ () => handleClick('answer_D') }
 			answer={ quiz.questions[index].answer_D }/>
 	</div>
 );

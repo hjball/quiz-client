@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => (
 	<React.Fragment>
-		<hr className="footer" />
+		<hr className="footer-divider" />
 		<footer className="footer-layout">
 			
 			<p>&copy; Quizzit</p>

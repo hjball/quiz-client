@@ -47,7 +47,7 @@ export default {
 					answer_D: "Robert Smith",
 				},
 				{
-					question: "What is the name of Eric Clapton's guitar",
+					question: "What is the name of Eric Clapton's guitar?",
 					answer_A: "Whitie",
 					answer_B: "Blackie",
 					answer_C: "Reddie",
