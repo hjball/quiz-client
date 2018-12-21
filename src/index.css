@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+.tagline {
+  color: aliceblue;
+}
+
 /* HEADER */
 
 .header h1 {
@@ -65,7 +69,7 @@ code {
   height: 20rem;
   margin: 1rem;
   background-color: #70A68A;
-  color: rgb(254, 250, 250);
+  color: aliceblue;
   border-radius: 3px;
   font-size: 1.2rem;
 }

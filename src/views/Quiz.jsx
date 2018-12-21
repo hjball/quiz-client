@@ -19,7 +19,11 @@ class Quiz extends Component {
 			this.timesUp = this.timesUp.bind(this);
 	}
 
-	handleClick() {
+	handleClick(answerIndex) {
+		// 	answerIndex,
+		// 	questionIndex: this.state.index
+		// // Call some function that is passed from container
+		// // Passing answer and question index
 		if ((this.state.index + 1) === this.props.questions.length) {
 			history.push("/quiz/result")
 
