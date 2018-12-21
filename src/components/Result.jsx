@@ -9,9 +9,7 @@ const Result = ({ result, quiz }) => (
 		<div className="result-container">
 			<h2>You got { result.result } out of { result.outOf }</h2>
 		</div>
-		<div className="goback-container">
-			<Link className="goback" to="/">Go Back</Link>
-		</div>
+		<Link className="goback" to="/">Go Back</Link>
 	</React.Fragment>
 );
 
