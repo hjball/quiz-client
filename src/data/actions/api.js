@@ -14,7 +14,7 @@ export const getQuiz = () => (dispatch, getState) => {
 	axios.post("/quiz", {
 		cat_id: 1,
 	}).then(({ data }) => {
-	const quiz = data.data;
+	const quiz = data;
 	console.log(quiz);
 	dispatch(setQuiz(quiz));
 	});
