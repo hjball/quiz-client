@@ -15,6 +15,7 @@ class Categories extends Component {
 	}
 
 	handleClick() {
+		this.props.getQuiz()
 		history.push("/quiz");
 	}
 

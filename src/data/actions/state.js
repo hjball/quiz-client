@@ -4,3 +4,10 @@ export const setCategories = categories => {
 		categories: categories,
 	}
 }
+
+export const setQuiz = quiz => {
+	return {
+		type: "setQuiz",
+		questions: quiz,
+	}
+}
