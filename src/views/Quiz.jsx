@@ -12,7 +12,7 @@ class Quiz extends Component {
 				index: 0,
 				result: 0,
 				outOf: 0,
-				date: Date.now() + 15000,
+				date: Date.now() + 10000,
 			}
 
 			this.handleClick = this.handleClick.bind(this);
@@ -30,7 +30,7 @@ class Quiz extends Component {
 		} else {
 			this.setState({
 				index: (this.state.index + 1),
-				date: Date.now() + 15000
+				date: Date.now() + 10000
 			})
 		}		
 	}
@@ -42,7 +42,7 @@ class Quiz extends Component {
 		} else {
 			this.setState({
 				index: (this.state.index + 1),
-				date: Date.now() + 15000
+				date: Date.now() + 10000
 			})
 		}		
 	}

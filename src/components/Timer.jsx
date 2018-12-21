@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Countdown from 'react-countdown-now';
 
 const renderer = ({ seconds }) => {
-	return <span className='timer'>{ seconds }</span>
+	return <span className={seconds < 4 ? 'timer-red': 'timer'}>{ seconds }</span>
 }
 
 class Timer extends Component  {
