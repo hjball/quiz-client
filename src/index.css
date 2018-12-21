@@ -72,6 +72,12 @@ code {
   color: aliceblue;
   border-radius: 3px;
   font-size: 1.2rem;
+  transition: 1s;
+}
+
+.categories:hover {
+  background-color: #385345;
+  transition: 0.1s;
 }
 
 /* QUIZ */
@@ -122,6 +128,12 @@ code {
   border-radius: 5px;
   justify-content: space-evenly;
   align-items: center;
+  transition: 1s;
+}
+
+.answer:hover {
+  background-color: #385345;
+  transition: 0.1s;
 
 }
 
