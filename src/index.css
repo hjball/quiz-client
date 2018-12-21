@@ -185,6 +185,12 @@ code {
   justify-content: center;
   padding: 0.5rem;
   margin-bottom: 12.6%;
+  transition: 1s;
+}
+
+.goback-container:hover {
+  background-color: #385345;
+  transition: 0.1s;
 }
 
 .goback {
