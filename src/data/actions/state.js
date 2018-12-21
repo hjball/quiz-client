@@ -8,6 +8,6 @@ export const setCategories = categories => {
 export const setQuiz = quiz => {
 	return {
 		type: "setQuiz",
-		questions: quiz,
+		quiz: quiz,
 	}
 }
