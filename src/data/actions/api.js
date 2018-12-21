@@ -15,7 +15,7 @@ export const getQuiz = () => (dispatch, getState) => {
 		cat_id: 1,
 	}).then(({ data }) => {
 	const quiz = data;
-	console.log(quiz);
+	console.log("QUIZ DATA:", quiz);
 	dispatch(setQuiz(quiz));
 	});
 }

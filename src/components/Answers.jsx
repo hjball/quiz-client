@@ -6,19 +6,19 @@ const Answers = ({ quiz, index, handleClick }) => (
 		<Answer 
 			letter="A"
 			handleClick={ () => handleClick('answer_A') }
-			answer={ quiz.questions[index].answer1 }/>
+			answer={ quiz.questions ? quiz.questions[0][index].answer1 : null}/>
 		<Answer 
 			letter="B"
 			handleClick={ () => handleClick('answer_B') }
-			answer={ quiz.questions[index].answer2 }/>
+			answer={ quiz.questions ? quiz.questions[0][index].answer2 : null}/>
 		<Answer 
 			letter="C"
 			handleClick={ () => handleClick('answer_C') }
-			answer={ quiz.questions[index].answer3 }/>
+			answer={ quiz.questions ? quiz.questions[0][index].answer3 : null}/>
 		<Answer 
 			letter="D"
 			handleClick={ () => handleClick('answer_D') }
-			answer={ quiz.questions[index].answer4 }/>
+			answer={ quiz.questions ? quiz.questions[0][index].answer4 : null}/>
 	</div>
 );
 

@@ -24,7 +24,7 @@ class Quiz extends Component {
 		// 	questionIndex: this.state.index
 		// // Call some function that is passed from container
 		// // Passing answer and question index
-		if ((this.state.index + 1) === this.props.questions.length) {
+		if ((this.state.index + 1) === this.props.quiz.questions[0].length) {
 			history.push("/quiz/result")
 
 		} else {
@@ -36,7 +36,7 @@ class Quiz extends Component {
 	}
 
 	timesUp() {
-		if ((this.state.index + 1) === this.props.questions.length) {
+		if ((this.state.index + 1) === this.props.quiz.questions[0].length) {
 			history.push("/quiz/result")
 
 		} else {
